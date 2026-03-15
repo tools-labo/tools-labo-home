@@ -237,7 +237,7 @@ img {
 
 .section-summary {
   margin: 0.45rem auto 0;
-  max-width: 34rem;
+  max-width: 38rem;
   color: var(--muted-foreground);
   text-wrap: balance;
   line-height: 1.7;
@@ -289,7 +289,7 @@ img {
 
 .card-image-only .card-icon {
   background: transparent;
-  border: none;
+  border: 0;
   border-radius: 0;
   padding: 0;
 }
@@ -298,12 +298,20 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1.5px solid #2f2f2f;
   background: #ffffff;
+  border: 2px solid #2f2f2f;
 }
 
-.card-icon-image-rounded {
-  border-radius: 14px;
+.card-icon-image-hakumiru {
+  border-radius: 18px;
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+.card-icon-image-bookscout {
+  border-radius: 0;
+  transform: scale(1.14);
+  transform-origin: center;
 }
 
 .card-icon-fallback {
@@ -489,7 +497,7 @@ img {
   }
 
   .section-summary {
-    max-width: 19.5rem;
+    max-width: 22rem;
   }
 
   .hero-summary span:last-child {
@@ -499,6 +507,14 @@ img {
   .card-icon {
     width: 72px;
     height: 72px;
+  }
+
+  .card-icon-image-hakumiru {
+    transform: scale(1.16);
+  }
+
+  .card-icon-image-bookscout {
+    transform: scale(1.18);
   }
 
   .about-section p {
