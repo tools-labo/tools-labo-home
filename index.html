@@ -3,13 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="日常をちょっと便利にするツールコレクション" />
   <title>Tools-LABO</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Tools-LABO</h1>
-    <p>トップページ準備中です。</p>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-icon" aria-hidden="true">🔧</span>
+        <span class="brand-text">Tools-LABO</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="hero section">
+      <div class="dot-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h1>Tools-LABO</h1>
+        <p>あなたの日常をちょっと便利にする<br />ツールコレクション</p>
+      </div>
+      <a class="hero-scroll" href="#products" aria-label="productsへスクロール">⌄</a>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>Inventory</h2>
+          <p>集めたツールたち</p>
+        </div>
+
+        <div class="card-grid">
+          <a href="#" class="card">
+            <span class="badge badge-new">NEW</span>
+            <div class="card-icon">🧮</div>
+            <h3>かんたん計算機</h3>
+            <p>シンプルで使いやすい電卓。日常の計算をサポートします。</p>
+          </a>
+
+          <a href="#" class="card">
+            <span class="badge badge-update">UPDATE</span>
+            <div class="card-icon">🎨</div>
+            <h3>カラーピッカー</h3>
+            <p>色を選んでHEX・RGBコードをコピー。デザイン作業に便利。</p>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card-icon">📝</div>
+            <h3>テキスト変換</h3>
+            <p>大文字・小文字変換、文字数カウントなどテキスト編集ツール。</p>
+          </a>
+
+          <a href="#" class="card">
+            <span class="badge badge-beta">BETA</span>
+            <div class="card-icon">⏱️</div>
+            <h3>タイマー</h3>
+            <p>集中作業やポモドーロに。シンプルなカウントダウンタイマー。</p>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card-icon">🔗</div>
+            <h3>URL短縮</h3>
+            <p>長いURLを短くシェアしやすい形に変換します。</p>
+          </a>
+
+          <a href="#" class="card">
+            <span class="badge badge-new">NEW</span>
+            <div class="card-icon">🖼️</div>
+            <h3>画像リサイズ</h3>
+            <p>ブラウザ上で画像サイズを調整。プライバシーも安心。</p>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card-icon">🔳</div>
+            <h3>QRコード生成</h3>
+            <p>テキストやURLからQRコードを即座に作成できます。</p>
+          </a>
+
+          <a href="#" class="card">
+            <span class="badge badge-beta">BETA</span>
+            <div class="card-icon">🎲</div>
+            <h3>ランダム生成</h3>
+            <p>パスワードやダミーテキストをランダムに生成します。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about-section">
+      <p>日々の作業をちょっと便利にするツールを作っています。</p>
+    </section>
   </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">🔧</span>
+          <strong>Tools-LABO</strong>
+        </div>
+        <p>日々の作業をちょっと便利にするツールを作っています。</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="current-year"></span> Tools-LABO. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
