@@ -109,9 +109,9 @@ img {
 }
 
 .brand-text {
-  font-size: 1.15rem;
+  font-size: 1.14rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
 }
 
 .site-nav {
@@ -153,9 +153,9 @@ img {
 
 .hero {
   position: relative;
-  min-height: 34vh;
-  padding-top: 7.25rem;
-  padding-bottom: 2.5rem;
+  min-height: 31vh;
+  padding-top: 6.8rem;
+  padding-bottom: 1.8rem;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -164,7 +164,7 @@ img {
 .dot-bg {
   position: absolute;
   inset: 0;
-  opacity: 0.14;
+  opacity: 0.1;
   background-image: radial-gradient(circle, #3d3a35 1px, transparent 1px);
   background-size: 16px 16px;
 }
@@ -182,11 +182,15 @@ img {
 }
 
 .hero-summary {
-  margin: 1rem auto 0;
-  max-width: 34rem;
+  margin: 0.9rem auto 0;
+  max-width: 35rem;
   color: var(--muted-foreground);
   display: grid;
-  gap: 0.2rem;
+  gap: 0.18rem;
+}
+
+.hero-summary span {
+  text-wrap: balance;
 }
 
 .hero-summary span:first-child {
@@ -194,12 +198,12 @@ img {
 }
 
 .hero-summary span:last-child {
-  font-size: clamp(1rem, 2.4vw, 1.22rem);
+  font-size: clamp(1rem, 2.4vw, 1.18rem);
 }
 
 .hero-scroll {
   position: absolute;
-  bottom: 0.65rem;
+  bottom: 0.4rem;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
@@ -217,12 +221,12 @@ img {
 }
 
 .products {
-  padding: 2.5rem 0 1.8rem;
+  padding: 2.1rem 0 1.5rem;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-title h2 {
@@ -233,8 +237,9 @@ img {
 
 .section-summary {
   margin: 0.45rem auto 0;
-  max-width: 30rem;
+  max-width: 31rem;
   color: var(--muted-foreground);
+  text-wrap: balance;
 }
 
 .card-grid {
@@ -248,7 +253,7 @@ img {
   background: var(--card);
   border: 2px solid var(--card-border);
   border-radius: var(--radius);
-  padding: 1.1rem;
+  padding: 1.05rem;
   transition:
     transform 0.25s ease,
     border-color 0.25s ease,
@@ -271,9 +276,9 @@ img {
 }
 
 .card-icon {
-  width: 68px;
-  height: 68px;
-  border-radius: 14px;
+  width: 76px;
+  height: 76px;
+  border-radius: 16px;
   background: var(--secondary);
   display: grid;
   place-items: center;
@@ -282,8 +287,8 @@ img {
 }
 
 .card-icon-image {
-  width: 78%;
-  height: 78%;
+  width: 84%;
+  height: 84%;
   object-fit: contain;
 }
 
@@ -295,28 +300,31 @@ img {
 }
 
 .card h3 {
-  margin: 1rem 0 0.45rem;
-  font-size: 1rem;
+  margin: 0.9rem 0 0.35rem;
+  font-size: 0.98rem;
   line-height: 1.45;
 }
 
 .card p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--muted-foreground);
-  line-height: 1.8;
+  line-height: 1.72;
+  text-wrap: pretty;
 }
 
 .badge {
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -6px;
+  right: -6px;
   border-radius: 8px;
-  padding: 2px 8px;
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  font-size: 0.64rem;
+  letter-spacing: 0.03em;
   font-weight: 700;
   color: #fff;
+  min-width: 54px;
+  text-align: center;
 }
 
 .badge-open {
@@ -330,12 +338,18 @@ img {
 .about-section {
   text-align: center;
   color: var(--muted-foreground);
-  padding: 0.8rem 0 1.4rem;
+  padding: 0.5rem 0 1.25rem;
   max-width: 760px;
 }
 
+.about-section p {
+  margin: 0 auto;
+  max-width: 42rem;
+  text-wrap: balance;
+}
+
 .site-footer {
-  margin-top: 2.2rem;
+  margin-top: 2rem;
   background: var(--footer-bg);
   border-top: 1px solid var(--border);
   padding: 2rem 0 1.2rem;
@@ -345,14 +359,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1.3rem;
   text-align: center;
 }
 
 .footer-main p {
   color: var(--muted-foreground);
-  margin: 0.6rem 0 0;
-  font-size: 0.95rem;
+  margin: 0.55rem 0 0;
+  font-size: 0.94rem;
+  text-wrap: balance;
 }
 
 .footer-brand .brand-icon {
@@ -387,20 +402,21 @@ img {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--border);
-  background: #f7f1e8;
+  border: 1px solid rgba(212, 197, 176, 0.8);
+  background: rgba(247, 241, 232, 0.72);
   color: var(--muted-foreground);
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   transition: all 0.2s ease;
 }
 
 .footer-social a:hover {
   color: var(--primary-dark);
   border-color: var(--primary);
+  background: rgba(247, 241, 232, 0.95);
 }
 
 .copyright {
-  margin: 1.5rem 0 0;
+  margin: 1.4rem 0 0;
   padding-top: 1rem;
   border-top: 1px solid var(--border);
   text-align: center;
@@ -449,20 +465,34 @@ img {
   }
 
   .hero {
-    min-height: 32vh;
-    padding-top: 6.9rem;
-    padding-bottom: 2.2rem;
+    min-height: 30vh;
+    padding-top: 6.5rem;
+    padding-bottom: 1.8rem;
   }
 
   .hero-summary {
-    max-width: 18rem;
+    max-width: 17.5rem;
   }
 
   .section-summary {
-    max-width: 17rem;
+    max-width: 18rem;
   }
 
   .hero-summary span:last-child {
-    font-size: 1.08rem;
+    font-size: 1.06rem;
+  }
+
+  .card-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .card-icon-image {
+    width: 88%;
+    height: 88%;
+  }
+
+  .about-section p {
+    max-width: 18rem;
   }
 }
