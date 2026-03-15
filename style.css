@@ -296,20 +296,21 @@ img {
 .card-icon-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   background: var(--card);
   border: 0;
 }
 
 .card-icon-image-hakumiru {
+  object-fit: cover;
   border-radius: 18px;
   transform: scale(1.1);
   transform-origin: center;
 }
 
 .card-icon-image-bookscout {
+  object-fit: contain;
   border-radius: 18px;
-  transform: scale(1.1);
+  transform: scale(1);
   transform-origin: center;
 }
 
@@ -508,9 +509,12 @@ img {
     height: 72px;
   }
 
-  .card-icon-image-hakumiru,
-  .card-icon-image-bookscout {
+  .card-icon-image-hakumiru {
     transform: scale(1.12);
+  }
+
+  .card-icon-image-bookscout {
+    transform: scale(1);
   }
 
   .about-section p {
