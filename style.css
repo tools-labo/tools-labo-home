@@ -287,10 +287,23 @@ img {
   overflow: hidden;
 }
 
+.card-image-only .card-icon {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
 .card-icon-image {
-  width: 94%;
-  height: 94%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1.5px solid #2f2f2f;
+  background: #ffffff;
+}
+
+.card-icon-image-rounded {
+  border-radius: 14px;
 }
 
 .card-icon-fallback {
@@ -486,11 +499,6 @@ img {
   .card-icon {
     width: 72px;
     height: 72px;
-  }
-
-  .card-icon-image {
-    width: 96%;
-    height: 96%;
   }
 
   .about-section p {
