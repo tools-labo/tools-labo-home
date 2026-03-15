@@ -237,9 +237,10 @@ img {
 
 .section-summary {
   margin: 0.45rem auto 0;
-  max-width: 31rem;
+  max-width: 34rem;
   color: var(--muted-foreground);
   text-wrap: balance;
+  line-height: 1.7;
 }
 
 .card-grid {
@@ -287,8 +288,8 @@ img {
 }
 
 .card-icon-image {
-  width: 84%;
-  height: 84%;
+  width: 94%;
+  height: 94%;
   object-fit: contain;
 }
 
@@ -475,7 +476,7 @@ img {
   }
 
   .section-summary {
-    max-width: 18rem;
+    max-width: 19.5rem;
   }
 
   .hero-summary span:last-child {
@@ -488,8 +489,8 @@ img {
   }
 
   .card-icon-image {
-    width: 88%;
-    height: 88%;
+    width: 96%;
+    height: 96%;
   }
 
   .about-section p {
