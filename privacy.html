@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Tools-LABO のプライバシーポリシーです。広告配信、アクセス解析、Cookieの利用について記載しています。"
+  />
+  <title>プライバシーポリシー | Tools-LABO</title>
+  <style>
+    :root {
+      --background: #f5f1eb;
+      --foreground: #2f2f2f;
+      --card: #fff8e7;
+      --primary: #8faf98;
+      --primary-dark: #6f8c77;
+      --muted: #e8e2d9;
+      --muted-foreground: #6b6560;
+      --border: #d4c5b0;
+      --header-bg: rgba(245, 241, 235, 0.92);
+      --footer-bg: #eee4d7;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--foreground);
+      background: var(--background);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Hiragino Sans",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+      line-height: 1.8;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(960px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--header-bg);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 6%);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .brand-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 8px 18px rgb(0 0 0 / 12%);
+      flex: 0 0 auto;
+    }
+
+    .brand-svg {
+      width: 1.35rem;
+      height: 1.35rem;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .brand-text {
+      font-size: 1.14rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: flex-end;
+    }
+
+    .site-nav a {
+      font-size: 0.95rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      color: var(--muted-foreground);
+      transition: all 0.2s ease;
+    }
+
+    .site-nav a:hover {
+      color: var(--foreground);
+      background: var(--muted);
+    }
+
+    .page-hero {
+      padding: 3rem 0 1.5rem;
+    }
+
+    .page-hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    .page-hero p {
+      margin: 0.8rem 0 0;
+      color: var(--muted-foreground);
+      max-width: 42rem;
+    }
+
+    .policy-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin: 1rem 0 2rem;
+    }
+
+    .policy-meta {
+      margin: 0 0 1rem;
+      color: var(--muted-foreground);
+      font-size: 0.95rem;
+    }
+
+    .policy-section + .policy-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .policy-section h2 {
+      margin: 0 0 0.8rem;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .policy-section p {
+      margin: 0.6rem 0 0;
+    }
+
+    .policy-section ul {
+      margin: 0.8rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .policy-section li + li {
+      margin-top: 0.45rem;
+    }
+
+    .note {
+      margin-top: 0.9rem;
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      background: #f7f1e8;
+      color: var(--muted-foreground);
+      border: 1px solid var(--border);
+    }
+
+    .site-footer {
+      margin-top: 2rem;
+      background: var(--footer-bg);
+      border-top: 1px solid var(--border);
+      padding: 2rem 0 1.2rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.3rem;
+      text-align: center;
+    }
+
+    .footer-main p {
+      color: var(--muted-foreground);
+      margin: 0.55rem 0 0;
+      font-size: 0.94rem;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .footer-brand .brand-icon {
+      box-shadow: none;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.25rem;
+      justify-content: center;
+    }
+
+    .footer-nav a {
+      color: var(--muted-foreground);
+      font-size: 1rem;
+    }
+
+    .footer-nav a:hover {
+      color: var(--primary-dark);
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(212, 197, 176, 0.8);
+      background: rgba(247, 241, 232, 0.72);
+      color: var(--muted-foreground);
+      font-size: 1.18rem;
+    }
+
+    .copyright {
+      margin: 1.4rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted-foreground);
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .site-nav {
+        justify-content: flex-start;
+      }
+
+      .policy-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Tools-LABO トップへ戻る">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="brand-svg" role="img" aria-hidden="true">
+            <path d="M9 3h6" />
+            <path d="M10 3v5l-4.8 7.8A4 4 0 0 0 8.6 22h6.8a4 4 0 0 0 3.4-6.2L14 8V3" />
+            <path d="M8.5 14h7" />
+          </svg>
+        </span>
+        <span class="brand-text">Tools-LABO</span>
+      </a>
+
+      <nav class="site-nav">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF73yZ69HH-FASKEYSkp98zM92o4dtQLtiQs7BzLRuwsobfA/viewform?pli=1" target="_blank" rel="noopener noreferrer">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>プライバシーポリシー</h1>
+        <p>
+          Tools-LABO（以下「当サイト」）における、ユーザーの個人情報の取扱い、
+          Cookie等の利用、広告配信に関する方針を記載しています。
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="policy-card">
+        <p class="policy-meta">最終更新日: 2026年3月15日</p>
+
+        <section class="policy-section">
+          <h2>1. 基本方針</h2>
+          <p>
+            当サイトは、ユーザーのプライバシーを尊重し、個人情報保護に関する法令等を踏まえ、
+            適切な管理に努めます。
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>2. 収集する情報について</h2>
+          <p>当サイトでは、以下の情報を取得する場合があります。</p>
+          <ul>
+            <li>お問い合わせ時にユーザーが入力した情報</li>
+            <li>アクセス状況に関する情報</li>
+            <li>Cookie、広告識別子、端末情報、ブラウザ情報等</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>3. 個人情報の利用目的</h2>
+          <p>取得した情報は、主に以下の目的で利用します。</p>
+          <ul>
+            <li>お問い合わせへの対応</li>
+            <li>サイトの改善、利便性向上</li>
+            <li>不正利用の防止</li>
+            <li>広告配信および広告効果の測定</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>4. 広告配信について</h2>
+          <p>
+            当サイトでは、第三者配信の広告サービス（Google AdSense など）を利用する場合があります。
+            これらの広告配信事業者は、ユーザーの興味に応じた広告を表示するために、
+            Cookie 等を使用することがあります。
+          </p>
+          <p>
+            Cookie を使用することで、当サイトや他サイトへの過去のアクセス情報に基づいた広告配信が行われる場合があります。
+          </p>
+          <div class="note">
+            Google を含む第三者配信事業者は Cookie を使用して、ユーザーの過去のアクセス情報に基づき広告を配信する場合があります。
+          </div>
+        </section>
+
+        <section class="policy-section">
+          <h2>5. Google AdSense に関する事項</h2>
+          <p>
+            当サイトは Google AdSense を利用または利用予定です。
+            Google およびそのパートナーは、広告配信、配信の最適化、広告効果の測定等のために、
+            Cookie や類似技術を利用することがあります。  [oai_citation:1‡Google ヘルプ](https://support.google.com/adsense/answer/10502938?hl=en-EN&ref_topic=1250104&utm_source=chatgpt.com)
+          </p>
+          <p>
+            EEA、英国、スイスのユーザーに対してパーソナライズド広告を配信する場合、
+            Google 認定の CMP（TCF 対応）を用いた同意取得が必要です。  [oai_citation:2‡Google ヘルプ](https://support.google.com/adsense/answer/13554020?utm_source=chatgpt.com)
+          </p>
+          <p>
+            当サイトは、必要に応じて同意管理ツールの導入、広告設定の見直し、表示内容の調整を行います。
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>6. Cookie の利用について</h2>
+          <p>
+            当サイトでは、利便性向上、利用状況の把握、広告配信の最適化のために Cookie を利用することがあります。
+          </p>
+          <p>
+            ユーザーは、ブラウザの設定により Cookie の受け取りを拒否または削除できます。
+            ただし、その場合、一部機能が正常に動作しないことがあります。
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>7. アクセス解析について</h2>
+          <p>
+            当サイトでは、サイト改善のためにアクセス解析ツールを利用する場合があります。
+            これにより、トラフィックデータが匿名または統計的な形で収集されることがあります。
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>8. 個人情報の第三者提供について</h2>
+          <p>
+            当サイトは、法令に基づく場合を除き、本人の同意なく個人情報を第三者に提供しません。
+            ただし、広告配信、アクセス解析、フォーム運用等に必要な範囲で外部サービスを利用する場合があります。
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>9. お問い合わせ</h2>
+          <p>
+            当サイトへのお問い合わせは、以下のフォームよりお願いします。
+          </p>
+          <p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF73yZ69HH-FASKEYSkp98zM92o4dtQLtiQs7BzLRuwsobfA/viewform?pli=1" target="_blank" rel="noopener noreferrer">
+              お問い合わせフォーム
+            </a>
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h2>10. プライバシーポリシーの変更</h2>
+          <p>
+            本ポリシーは、法令や運営状況の変更等に応じて、予告なく改定する場合があります。
+            最新の内容は本ページにて随時公開します。
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="brand-svg" role="img" aria-hidden="true">
+              <path d="M9 3h6" />
+              <path d="M10 3v5l-4.8 7.8A4 4 0 0 0 8.6 22h6.8a4 4 0 0 0 3.4-6.2L14 8V3" />
+              <path d="M8.5 14h7" />
+            </svg>
+          </span>
+          <strong>Tools-LABO</strong>
+        </div>
+        <p>個人開発のプロダクトをまとめたポータルです。</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#products">Products</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF73yZ69HH-FASKEYSkp98zM92o4dtQLtiQs7BzLRuwsobfA/viewform?pli=1" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://x.com/tools_labo?s=21" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF73yZ69HH-FASKEYSkp98zM92o4dtQLtiQs7BzLRuwsobfA/viewform?pli=1" target="_blank" rel="noopener noreferrer" aria-label="Contact">✉</a>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Tools-LABO. All rights reserved.</p>
+  </footer>
+</body>
+</html>
