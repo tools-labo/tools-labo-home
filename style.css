@@ -46,6 +46,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
@@ -272,9 +277,19 @@ a {
   background: var(--secondary);
   display: grid;
   place-items: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.card-icon-image {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+}
+
+.card-icon-fallback {
   font-size: 1.55rem;
   color: var(--primary-dark);
-  margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
